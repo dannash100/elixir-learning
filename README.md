@@ -3,9 +3,9 @@ elixir and functional programming
 
 *Notes taken while following Learn Functional Programming with Elixir, 2018, Ulisses Almeida*
 
-##syntax
+## syntax
 
-###function-capturing operator
+### function-capturing operator
 
 - Use named function as a value with ```&``` operator
 - eg.```upcase = &String.upcase/1```
