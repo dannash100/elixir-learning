@@ -91,3 +91,10 @@ date = ~D[2018-01-01]
 ### functions
 
 - functions also control program flow, but can do more than pattern matching which just throw errors.
+
+#### clauses
+*see pattern_matching/lib/number_compare.ex*
+
+- multiple function definitions are called function clauses, you can create as many as you need as long as they are defined in sequence.
+- elixir will execute the function of the first clause that matches.
+- ```defp``` defines a private function, they cannot be imported or accessed from the outside.

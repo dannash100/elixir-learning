@@ -7,4 +7,4 @@ defmodule NumberCompare do
   defp check(false, _, other_number), do: other_number
 end
 
-IO.puts NumberCompare.greater(6,2)
+
