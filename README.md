@@ -16,6 +16,7 @@ elixir and functional programming
 
 - To make the left side match the right side of an expression elixir can create complex bindings.
 - it is important to realize that in elixir ```=``` isn't just for binding variables, it can be used for pattern matching, creating checks and unpacking values of different data types.
+- pattern matching is used in Elixir to manage program flow
 
 #### string matching
 
@@ -69,3 +70,24 @@ abilities = %{strength: 16, dexterity: 12, intelligence: 10}
 %{strength: strength_value, dexterity: 12} = abilities
 # strength_value assigned to 16 and map must have a key of dexterity with a value of 12
 ```
+
+#### keyword lists
+
+- list of two-element tuples, allows duplicated keys but they must be atoms unlike maps which can use any data type as a key.
+
+#### structs
+
+- extension of mapping structures, used in representing consistent structures that have the same set of keys everywhere in a project with a common list of attributes
+- everything that is used on maps can be used on structs
+- start structs with *sigils*, e.g for word list without quotes use ```~w(cat dog man)```
+- Date struc:
+
+```elixir
+date = ~D[2018-01-01]
+%{year: year} = date
+# year assigned as 2018
+```
+
+### functions
+
+- functions also control program flow, but can do more than pattern matching which just throw errors.
