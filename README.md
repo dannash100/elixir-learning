@@ -92,9 +92,26 @@ date = ~D[2018-01-01]
 
 - functions also control program flow, but can do more than pattern matching which just throw errors.
 - default values specified with ```//```
+
 #### clauses
 *see pattern_matching/lib/number_compare.ex*
 
 - multiple function definitions are called function clauses, you can create as many as you need as long as they are defined in sequence.
 - elixir will execute the function of the first clause that matches.
 - ```defp``` defines a private function, they cannot be imported or accessed from the outside.
+
+#### guard clauses
+*see pattern_matching/lib/guard_clauses/*
+
+- as an alternative to making multiple auxiliary function clauses
+- guard clauses use ```when``` keyword
+- can be used to enforce data types
+- define macro function for reusing common guard clauses with the ```defguard``` directive
+- generated code in macro functions must adhere to the list of allowed functions in guard clauses.
+
+### control-flow structures
+
+#### case, cond, if and unless
+*see pattern_matching/lib/elixir_flows for examples*
+
+
