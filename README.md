@@ -88,12 +88,12 @@ date = ~D[2018-01-01]
 # year assigned as 2018
 ```
 
-### functions
+## functions
 
 - functions also control program flow, but can do more than pattern matching which just throw errors.
 - default values specified with ```//```
 
-#### clauses
+### clauses
 *see pattern_matching/lib/number_compare.ex*
 
 - multiple function definitions are called function clauses, you can create as many as you need as long as they are defined in sequence.
@@ -109,9 +109,15 @@ date = ~D[2018-01-01]
 - define macro function for reusing common guard clauses with the ```defguard``` directive
 - generated code in macro functions must adhere to the list of allowed functions in guard clauses.
 
-### control-flow structures
+## control-flow structures
 
-#### case, cond, if and unless
+### case, cond, if and unless
 *see pattern_matching/lib/elixir_flows for examples*
 
+## recursion
 
+### bounded recursion
+
+- type of function where the successive calls to itself have an end called the boundary clause, every time it is called it requires fewer iterations to finish.
+- number of repetitions directly associated with the arguments it receives
+- navigate recursively through lists with ```[head | tail]``` by returning the tail each time.
