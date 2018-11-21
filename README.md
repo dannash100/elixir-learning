@@ -91,7 +91,7 @@ date = ~D[2018-01-01]
 ### functions
 
 - functions also control program flow, but can do more than pattern matching which just throw errors.
-
+- default values specified with ```//```
 #### clauses
 *see pattern_matching/lib/number_compare.ex*
 
