@@ -14,6 +14,9 @@ defmodule EnchanterShop do
   @enchanter_name "Edwin"
 
   def enchant_for_sale([]), do: []
+  def enchant_for_sale([item = %{magic: true} | incoming_items]) do
+    [item | enchant_for_sale(incoming_items)]
+  end
   def enchant_for_sale([item | incoming_items]) do
     new_item = %{
       title: "#{@enchanter_name}'s #{item.title}",
