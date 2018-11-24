@@ -9,7 +9,7 @@ defmodule DepthNavigator do
   defp go_through([], _current_depth), do: nil
   defp go_through(_dirs, current_depth) when current_depth > @max_depth, do: nil
   defp go_through([content | rest], current_depth) do
-    print_and_navigate(content, File.dir?(content), current_depth)
+    print_and_navigate(content, dir?(content), current_depth)
     go_through(reset, current_depth)
   end
 
@@ -24,5 +24,10 @@ defmodule DepthNavigator do
   defp expand_dirs([dir | dirs], relative_to) do
     expanded_dir = Path.expand(dir, relative_to)
     [expanded_dir | expand_dirs(dirs, relative_to)]
+  end
+
+  defp dir?(dir) do
+    {:ok, %{type: type}} = File.lstat(dir)
+    type == :directory
   end
 end
