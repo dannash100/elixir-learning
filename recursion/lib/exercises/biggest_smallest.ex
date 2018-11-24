@@ -7,6 +7,15 @@ defmodule MyList do
 
   defp biggest(a, b) when a >= b, do: a
   defp biggest(a, b) when a < b, do: b
+
+  def min([]), do: []
+  def min([a]), do: a
+  def min([a, b | rest]) do
+    min([smallest(a, b) | rest])
+  end
+
+  defp smallest(a, b) when a <= b, do: a
+  defp smallest(a, b) when a > b, do: b
 end
 
 
