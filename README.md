@@ -145,5 +145,7 @@ date = ~D[2018-01-01]
 ### unbounded recursion
 *see recursion/lib/depth_navigator.ex*
 
-- when we cannot predict the number of repetitions for a recursive function. i.e a webcrawler navigating webpages.
+- when we cannot predict the number of repetitions for a recursive function. i.e a web-crawler navigating webpages.
 - add restrictions to prevent an unbound recursion from running too long. i.e a depth restriction or a timer.
+
+## higher-order functions
