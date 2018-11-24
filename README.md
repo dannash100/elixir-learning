@@ -143,6 +143,7 @@ date = ~D[2018-01-01]
 - constant and low memory consumption while performing recursive operations
 
 ### unbounded recursion
-*see recursion/lib/navigator.ex*
+*see recursion/lib/depth_navigator.ex*
 
 - when we cannot predict the number of repetitions for a recursive function. i.e a webcrawler navigating webpages.
+- add restrictions to prevent an unbound recursion from running too long. i.e a depth restriction or a timer.
