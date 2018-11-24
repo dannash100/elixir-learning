@@ -135,3 +135,14 @@ date = ~D[2018-01-01]
 - technique where a larger processes i.e queries are split into smaller independent operations then combined or reassembled.
 - another example is sorting a list by dividing the list in half into smaller and smaller manageable lists.
 - in sort example, the recursive call to ascending can work independently, they can compute in parralel, this algorithimn is known as ```merge sort```
+
+### tail-call optimization
+*see recursion/lib/tr_factorial.ex*
+
+- replace the use of the function result with an extra argument that accumulates the results of each iteration
+- constant and low memory consumption while performing recursive operations
+
+### unbounded recursion
+*see recursion/lib/navigator.ex*
+
+- when we cannot predict the number of repetitions for a recursive function. i.e a webcrawler navigating webpages.
