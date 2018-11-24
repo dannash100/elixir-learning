@@ -92,6 +92,7 @@ date = ~D[2018-01-01]
 
 - functions also control program flow, but can do more than pattern matching which just throw errors.
 - default values specified with ```//```
+- multiple ```defs``` must be wrapped in ```defmodule```
 
 ### clauses
 *see pattern_matching/lib/number_compare.ex*
@@ -121,3 +122,16 @@ date = ~D[2018-01-01]
 - type of function where the successive calls to itself have an end called the boundary clause, every time it is called it requires fewer iterations to finish.
 - number of repetitions directly associated with the arguments it receives
 - navigate recursively through lists with ```[head | tail]``` by returning the tail each time.
+
+### transforming lists
+*see recursion/lib/enchanter_shop.ex*
+
+- data is immutable in functional programming - transforming data builds new data.
+- prepending and element to a list is many times faster than appending with the ```++``` operator.
+
+### divide-and-conquer
+*see recursion/lib/sort.ex*
+
+- technique where a larger processes i.e queries are split into smaller independent operations then combined or reassembled.
+- another example is sorting a list by dividing the list in half into smaller and smaller manageable lists.
+- in sort example, the recursive call to ascending can work independently, they can compute in parralel, this algorithimn is known as ```merge sort```
