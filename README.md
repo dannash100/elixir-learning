@@ -1,4 +1,10 @@
-# elixir-learning
+▄███▄   █    ▄█     ▄  ▄█ █▄▄▄▄
+█▀   ▀  █    ██ ▀▄   █ ██ █  ▄▀
+██▄▄    █    ██   █ ▀  ██ █▀▀▌
+█▄   ▄▀ ███▄ ▐█  ▄ █   ▐█ █  █
+▀███▀       ▀ ▐ █   ▀▄  ▐   █
+                 ▀         ▀
+
 elixir and functional programming
 
 *Notes taken while following Learn Functional Programming with Elixir, 2018, Ulisses Almeida*
