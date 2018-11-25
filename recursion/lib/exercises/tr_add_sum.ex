@@ -1,4 +1,4 @@
-defmodule TailRecursion do
+defmodule TRAddSum do
     def add_up(n), do: up_to(n, 0)
     defp up_to(0, acc), do: acc
     defp up_to(n, acc), do: n + up_to(n - 1, n + acc)
