@@ -4,7 +4,7 @@
     |  __/ | |>  <| | |   
      \___|_|_/_/\_\_|_|   
 
-elixir and functional programming
+# functional programming with elixir
 
 *Notes taken while following Learn Functional Programming with Elixir, 2018, Ulisses Almeida*
 
