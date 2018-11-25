@@ -1,8 +1,8 @@
-          _ _      _      
-      ___| (_)_  _(_)_ __ 
+          _ _      _
+      ___| (_)_  _(_)_ __
      / _ \ | \ \/ / | '__|
-    |  __/ | |>  <| | |   
-     \___|_|_/_/\_\_|_|   
+    |  __/ | |>  <| | |
+     \___|_|_/_/\_\_|_|
 
 # functional programming with elixir
 
@@ -154,3 +154,5 @@ date = ~D[2018-01-01]
 - add restrictions to prevent an unbound recursion from running too long. i.e a depth restriction or a timer.
 
 ## higher-order functions
+
+- use higher-order functions to improve repetitious code that includes definitions for navigating through items and stop conditions.
