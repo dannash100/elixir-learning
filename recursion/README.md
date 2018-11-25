@@ -1,10 +1,18 @@
 # Recursion
 
-**TODO: Add description**
+## Chapter 4
+*see /lib for examples and exercises in recursion*
 
-## Installation
+### To run defmodule
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+- navigate to lib directory in command line
+- run ```iex```
+- ```c("filename.ex")```
+- ```ModuleName.defName(arguments)```
+
+## installation
+
+if [available in Hex](https://hex.pm/docs/publish), the package can be installed
 by adding `recursion` to your list of dependencies in `mix.exs`:
 
 ```elixir
@@ -14,8 +22,4 @@ def deps do
   ]
 end
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/recursion](https://hexdocs.pm/recursion).
 

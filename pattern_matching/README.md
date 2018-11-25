@@ -1,6 +1,14 @@
 # PatternMatching
 
-**TODO: Add description**
+## Chapter 3
+*see /lib and subdirectories for examples and exercises in pattern matching*
+
+### To run defmodule
+
+- navigate to lib directory in command line
+- run ```iex```
+- ```c("filename.ex")```
+- ```ModuleName.defName(arguments)```
 
 ## Installation
 
@@ -14,8 +22,3 @@ def deps do
   ]
 end
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/pattern_matching](https://hexdocs.pm/pattern_matching).
-
